@@ -1,0 +1,24 @@
+﻿
+
+===== BACKEND CHECK =====
+System check identified no issues (0 silenced).
+
+
+===== BACKEND TESTS =====
+
+===== FRONTEND BUILD =====
+
+===== GIT STATUS =====
+M backend/config/settings.py
+ M frontend/package-lock.json
+ M frontend/package.json
+?? backend/.python-version
+?? backend/railway.json
+?? error-log.txt
+?? frontend/railway.json
+origin	https://github.com/shakeebwebworks/UNITED-COFFEE (fetch)
+origin	https://github.com/shakeebwebworks/UNITED-COFFEE (push)
+bec8572 United Coffee full-stack website
+
+
+===== GIT PUSH =====
