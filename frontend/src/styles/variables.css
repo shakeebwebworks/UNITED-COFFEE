@@ -1,0 +1,18 @@
+:root {
+  --uc-espresso: #24130d;
+  --uc-chocolate: #321c13;
+  --uc-coffee: #654638;
+  --uc-cream: #f3d8ad;
+  --uc-gold: #c99452;
+  --uc-beige: #e9d5b5;
+
+  --uc-font-serif: 'Playfair Display', Georgia, serif;
+  --uc-font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --uc-radius-lg: 32px;
+  --uc-radius-md: 18px;
+  --uc-radius-pill: 999px;
+
+  --uc-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --uc-shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
