@@ -1,7 +1,13 @@
 import axios from 'axios'
 
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  (['localhost', '127.0.0.1'].includes(window.location.hostname)
+    ? '/api'
+    : 'https://united-coffee.onrender.com/api')
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: API_URL,
   headers: { 'Content-Type': 'application/json' },
 })
 
@@ -35,7 +41,7 @@ api.interceptors.response.use(
       original._retry = true
       try {
         refreshing = refreshing || axios
-          .post('/api/auth/refresh/', { refresh: tokens.refresh })
+          .post(API_URL + '/auth/refresh/', { refresh: tokens.refresh })
           .finally(() => { refreshing = null })
         const { data } = await refreshing
         tokens.set(data)
