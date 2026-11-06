@@ -17,6 +17,7 @@ export function ProductsProvider({ children }) {
     ])
       .then(([p, c]) => {
         if (!alive) return
+        if (!Array.isArray(p.data?.results) || !Array.isArray(c.data)) throw new Error('bad response')
         setProducts(p.data.results)
         setCategoryList(c.data)
       })

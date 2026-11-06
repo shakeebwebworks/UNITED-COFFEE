@@ -20,6 +20,10 @@ RENDER_HOST = os.getenv('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_HOST:
     ALLOWED_HOSTS.append(RENDER_HOST)
 
+RENDER_HOST = os.getenv('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_HOST:
+    ALLOWED_HOSTS.append(RENDER_HOST)
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
